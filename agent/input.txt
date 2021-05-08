@@ -1,0 +1,7 @@
+start(X) :- vaccine(X).
+ready(X) :- start(X), health(X).
+play(X,Y) :- ready(X), ready(Y).
+vaccine(hayley).
+health(hayley).
+health(teddy).
+:-play(hayley, teddy).
